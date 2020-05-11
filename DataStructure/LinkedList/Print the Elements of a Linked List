@@ -1,0 +1,18 @@
+#Using Loops
+
+def printLinkedList(head):
+    cur=head
+    while cur:
+        print(cur.data)
+        cur=cur.next
+        
+   
+#Using Recursion
+
+def printLinkedList(head):
+    if head is None:
+        return
+    else:
+        print(head.data)
+        return printLinkedList(head.next)
+        
