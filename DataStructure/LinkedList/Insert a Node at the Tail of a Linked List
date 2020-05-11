@@ -1,0 +1,12 @@
+def insertNodeAtTail(head, data):
+    Node=SinglyLinkedListNode(data)
+    if(head is None):
+        head=Node
+    else:
+        curr=head
+        while(curr.next):
+            curr=curr.next
+
+        curr.next=Node
+    return head
+
