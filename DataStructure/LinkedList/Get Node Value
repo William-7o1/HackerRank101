@@ -1,0 +1,8 @@
+def getNode(head, pos):
+    m1=m2=head
+    for i in range(pos):
+        m1=m1.next
+    while m1.next !=None:
+        m1=m1.next
+        m2=m2.next
+    return m2.data
