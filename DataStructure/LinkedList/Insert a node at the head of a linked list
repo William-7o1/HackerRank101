@@ -1,0 +1,9 @@
+def insertNodeAtHead(head, data):
+    a=SinglyLinkedListNode(data)
+    if head is None:
+        head=a
+    else:
+        cur=head
+        head=a 
+        a.next=cur 
+    return head     
