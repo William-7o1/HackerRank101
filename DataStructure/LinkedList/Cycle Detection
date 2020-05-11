@@ -1,0 +1,10 @@
+def has_cycle(head):
+    m1=head.next
+    m2=head
+    while m1 !=None and m1.next!=None and m2 !=None and m2.next!=None:
+        if m1==m2:
+            return 1
+        else:
+            m1=m1.next.next
+            m2=m2.next
+    return 0
