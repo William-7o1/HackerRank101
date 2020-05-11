@@ -1,0 +1,10 @@
+def deleteNode(head, pos):
+    if pos == 0:
+        a=head.next
+        head=a
+    else:
+        cur=head
+        for i in range(pos-1):
+            cur=cur.next
+        cur.next=cur.next.next
+    return head
