@@ -1,0 +1,9 @@
+def reversePrint(head):
+    list=[]
+    curr=head
+    while(curr):
+        list.append(curr.data)
+        curr=curr.next
+    
+    for i in range(len(list)):
+        print(list.pop())
