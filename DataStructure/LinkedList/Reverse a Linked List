@@ -1,0 +1,12 @@
+def reverse(head):
+    prev=nexxt=None
+    cur=head
+
+    while(cur):
+        nexxt=cur.next
+        cur.next=prev
+
+        prev=cur
+        cur=nexxt
+    
+    return prev
